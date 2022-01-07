@@ -1,0 +1,7 @@
+<div class="filter">
+  <input class="filter__city" type="text" placeholder="City" (keydown.enter)="addCity($event)">
+  <select class="filter__date" (change)="changeDataType($event)">
+    <option>Hourly</option>
+    <option>Daily</option>
+  </select>
+</div>

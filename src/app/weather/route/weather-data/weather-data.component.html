@@ -1,0 +1,10 @@
+<div>
+  <weather-data-filter
+  (dataType)="updateDataType($event)"
+  (cityName)="updateCityName($event)"
+  ></weather-data-filter>
+  <weather-data-table
+    [dataType] = dataType
+    [weatherData]="weatherItems"
+  ></weather-data-table>
+</div>
